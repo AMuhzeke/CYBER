@@ -1,0 +1,93 @@
+NIST Special Publication 800-61 Revision 2, "Computer Security Incident Handling Guide", provides guidelines for incident response (IR) processes that organizations can use to improve their ability to detect, respond to, and recover from cybersecurity incidents.
+📄 What is NIST 800-61?
+NIST 800-61 is a framework created by the National Institute of Standards and Technology (NIST) that outlines how organizations should prepare for, detect, respond to, and recover from security incidents.
+The guide is widely used in cybersecurity, especially in SOC (Security Operations Center) environments, as a best practice for incident handling.
+
+🔑 Key Components of NIST 800-61
+The incident response lifecycle consists of four main phases:
+Phase	Description
+1. Preparation	Developing incident response policies, tools, and training before an incident occurs.
+2. Detection & Analysis	Identifying signs of an incident and analyzing the scope, impact, and type of attack.
+3. Containment, Eradication, and Recovery	Limiting the damage, removing the threat, and restoring systems to normal operations.
+4. Post-Incident Activity	Documenting lessons learned, performing a root cause analysis, and improving procedures.
+
+🔍 1. Preparation
+This phase is all about being proactive before an incident happens.
+Key Activities:
+	• Develop an Incident Response Policy
+	• Create an Incident Response Plan (IRP)
+	• Set up Incident Response Team (IRT) roles (SOC Analysts, Forensics, Management)
+	• Install logging and monitoring tools (SIEMs like Splunk or Elastic Stack)
+	• Perform Risk Assessments
+	• Conduct Tabletop Exercises
+
+⚠️ 2. Detection & Analysis
+In this phase, the goal is to identify the incident quickly and understand its impact.
+Steps:
+	• Use SIEM tools to detect suspicious activity (Elastic Stack, Splunk, Security Onion)
+	• Perform log analysis and packet capture analysis (Wireshark, tcpdump)
+	• Classify incidents using categories like:
+		○ Malware Infection
+		○ Unauthorized Access
+		○ DoS Attacks
+		○ Insider Threats
+👉 Common Indicators:
+	• Unusual network traffic
+	• Multiple failed login attempts
+	• Unexpected file changes
+	• Alerts from IDS/IPS
+
+🔒 3. Containment, Eradication, and Recovery
+This is the action phase where the threat is neutralized.
+✅ Containment:
+	• Isolate infected systems
+	• Block malicious IP addresses
+	• Disable compromised user accounts
+🧹 Eradication:
+	• Remove malware
+	• Apply security patches
+	• Reset passwords
+🔄 Recovery:
+	• Restore systems from backups
+	• Validate system functionality
+	• Monitor for re-infection
+
+📌 4. Post-Incident Activity
+After the incident is resolved, the team must document everything.
+Steps:
+	• Perform a Lessons Learned meeting
+	• Write an Incident Report
+	• Update Incident Response Playbooks
+	• Identify gaps in security controls
+	• Conduct training sessions
+
+📄 Example Incident Report Outline:
+Section	Description
+Incident ID	Unique ID for tracking
+Incident Date/Time	When it occurred
+Description	What happened
+Impact	Systems affected
+Root Cause	How the attack happened
+Response Actions	Steps taken to contain & recover
+Recommendations	Future preventive measures
+
+How This Applies to SOC Analysts 🔥
+As a SOC Analyst, you'll be working on these phases daily:
+Task	NIST Phase	Tools
+Log Review	Detection & Analysis	Splunk, Elastic, Wireshark
+Threat Containment	Containment	Firewalls, Endpoint Protection
+Malware Removal	Eradication	Anti-Malware Tools, SIEM
+Report Writing	Post-Incident Activity	Incident Report Templates
+
+💪 Best Practices
+	• Use MITRE ATT&CK to map attack techniques
+	• Automate tasks with Python scripts
+	• Practice incident response using TryHackMe or Blue Team Labs Online
+	• Join IR tabletop exercises
+
+🔥 Bonus Resource
+TryHackMe has an Incident Response (NIST) room that follows this exact framework 👉 https://tryhackme.com/room/incidentresponse
+
+Conclusion
+NIST 800-61 helps organizations build structured and repeatable processes to handle cybersecurity incidents. For aspiring SOC Analysts like you, mastering this framework will give you a huge advantage in job interviews and real-world operations.
+Would you like a customized Incident Response Playbook based on NIST 800-61 to add to your cybersecurity portfolio? 📄🚀
